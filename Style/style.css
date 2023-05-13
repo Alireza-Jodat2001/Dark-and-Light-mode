@@ -1,0 +1,124 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: calibri;
+}
+body {
+    height: 100vh;
+}
+/*_______________________________________________HEADER_______________________________________________*/
+header {
+    height: 10%;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"] {
+    display: none;
+}
+.div-dark-mode {
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-dark-mode label i {
+    font-size: 20px;
+    color: #00A000CF;
+}
+ul {
+    margin-left: 180px;
+}
+ul li {
+    display: inline-block;
+    color: #000000;
+}
+ul a {
+    margin: 0px 50px;
+}
+/*______________________________________________ARTICLE_______________________________________________*/
+article {
+    height: 90%;
+    background: #00A000CF;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    align-items: center;
+}
+form {
+    width: 50%;
+    height: 60%;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 3px #565656;
+    flex-direction: column;
+    transition: 0.5s;
+    border-radius: 2px;
+}
+form h1 {
+    font: bold 40px/100px calibri;
+}
+form input {
+    border: none;
+    outline: none;
+    background: #E7E2E2D8;
+    width: 60%;
+    margin-bottom: 15px;
+    padding: 20px;
+    box-shadow: 1px 1px 3px lightgray;
+    font: bold 13px calibri;
+}
+form button {
+    background: #00A000CF;
+    box-shadow: 1px 1px 3px lightgray;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 35%;
+    transition: 0.5s;
+    margin: 10px 0px 25px 0px;
+}
+form button:hover {
+    cursor: pointer;
+}
+form p {
+    font: bold 14px calibri;
+}
+form p a{
+    color: #00A000CF;
+}
+#check:checked ~ article {
+    background: rgb(49, 49, 49);
+}
+#check:checked ~ article form {
+    background: #00A000CF;
+}
+#check:checked ~ header {
+    background: #00A000CF;
+}
+#check:checked ~ header div label i {
+    color: #FFF;
+}
+#check:checked ~ article form h1 {
+    color: #FFF;
+}
+#check:checked ~ article form input {
+    box-shadow: 1px 1px 3px rgb(65, 64, 64);
+}
+#check:checked ~ article form button {
+    box-shadow: 1px 1px 3px #000000;
+    border: none;
+}
+#check:checked ~ article form p a {
+    color: #FFF;
+}
+#check:checked ~ header ul li {
+    color: #FFF;
+}
